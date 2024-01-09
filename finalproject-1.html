@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Hike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Familjen+Grotesk&family=Literata&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f0f2f5;
+      }
+
+      div {
+        background: linear-gradient(
+          108.1deg,
+          rgb(167, 220, 225) 11.2%,
+          rgb(217, 239, 242) 88.9%
+        );
+        max-width: 50%;
+        font-family: "Comfortaa", sans-serif;
+        text-align: center;
+        margin: auto;
+        padding: 43px 60px;
+        border-radius: 10px;
+      }
+      h1 {
+        color: #02273a;
+        font-weight: bold;
+        font-size: 40px;
+        /* font-size: 2vw; */
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        line-height: 45px;
+        margin: 10px;
+        padding: 5px;
+      }
+
+      h2 {
+        color: #02273a;
+        font-weight: bold;
+        font-size: 30px;
+        /* font-size: 1.5vw; */
+        margin: 10px;
+        padding: 10px;
+        line-height: 45px;
+      }
+      h3 {
+        font-weight: bold;
+        font-size: 18px;
+        /* font-size: 1vw; */
+        margin: auto;
+        padding: auto;
+        line-height: 30px;
+      }
+
+      h3 a {
+        color: #02273a;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      h3 a:hover {
+        text-decoration: underline;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      p {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        /* font-size: 0.5vw; */
+        line-height: 25px;
+      }
+      p a {
+        color: black;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      p a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        margin: 20px auto;
+        display: block;
+        color: #02273a;
+        background: #e9fbfc;
+        font-size: 18px;
+        /* font-size: 0.5vw; */
+        font-family: "Comfortaa", sans-serif;
+        padding: 20px 30px;
+        border-radius: 50px;
+        border: 1px solid#E9FBFC;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        color: #02273a;
+        background: #b1f0f2;
+        border: 1px solid#b1f0f2;
+        cursor: pointer;
+      }
+
+      span {
+        font-size: 14px;
+        /* font-size: 0.5vw; */
+      }
+      span a {
+        color: black;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+      }
+      span a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>See what you can experience in Malaysia</h1>
+      <h2>Mount Kinabalu - 4095.2 m.a.s.l</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/523/original/360_F_214865691_JzFgBHZ03Tyj3EPPBkreN055rZSxPDAY.jpg?1699604752"
+        alt="mtkinabalu"
+      />
+      <hr />
+      <p>
+        <strong
+          >Mount Kinabalu (Malay: <em>Gunung Kinabalu</em>, Dusun:
+          <em>Gayo Ngaran or Nulu Nabalu</em>)</strong
+        >
+        is the highest mountain in Borneo and Malaysia. With an elevation of
+        4,095 metres (13,435 ft), it is third-highest peak of an island on
+        Earth, and 20th most prominent mountain in the world. The mountain is
+        located in Ranau district, West Coast Division of Sabah, Malaysia. It is
+        protected as Kinabalu Park, a World Heritage.
+        <a href="https://en.wikipedia.org/wiki/Mount_Kinabalu" target="_blank"
+          >Read more on Wikipedia.</a
+        >
+        <br />
+      </p>
+      <h3>
+        <a
+          href="https://borneocalling.com/mount-kinabalu-climb/"
+          target="_blank"
+          >Mount Kinabalu Climb Packages</a
+        >
+      </h3>
+
+      <button>Let's Hike!</button>
+      <span
+        >This page is coded by
+        <a href="https://www.linkedin.com/in/nurulfateharsd" target="_blank"
+          >FatehaRsd</a
+        ></span
+      >
+    </div>
+    <script>
+      function joinUs() {
+        let welcome = alert("Hello everyone, let's join our journey!");
+        let name = prompt("What is your name?");
+        let hike = prompt(
+          "Do you like to hike," + " " + name + "? Type 'yes' or 'no'"
+        );
+
+        if (hike.toLowerCase() === "yes") {
+          alert(
+            "Let's book Mount Kinabalu Climb Packages now," + " " + name + "!"
+          );
+        } else {
+          alert("It's okay," + " " + name + "." + " " + "See you later!");
+        }
+      }
+
+      let joinButton = document.querySelector("button");
+      joinButton.addEventListener("click", joinUs);
+    </script>
+  </body>
+</html>
